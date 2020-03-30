@@ -1,0 +1,18 @@
+{
+  "name": "Vacina Coronavirus",
+  "manifest_version": 2,
+  "version": "1.2",
+  "description": "Uma vacina para o coronavírus para internet",
+  "author": "Lucas Machado",
+  "icons": {
+    "48": "icons/border-48.png",
+    "96": "icons/border-96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["main.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
